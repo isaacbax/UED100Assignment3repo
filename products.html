@@ -29,6 +29,66 @@
     <button id="cart-toggle-btn">Cart (0)</button>
   </header>
 
+    <header>
+    <!-- existing header stuff -->
+  </header>
+
+  <!-- Help Me Choose Wizard -->
+  <section class="section helper-section">
+    <h2>Help Me Choose</h2>
+    <div class="helper-grid">
+      <div class="helper-field">
+        <label for="helper-chassis">Your car / chassis</label>
+        <select id="helper-chassis">
+          <option value="">Any</option>
+          <option value="BMW">BMW</option>
+          <option value="Nissan">Nissan</option>
+          <option value="Toyota">Toyota</option>
+          <option value="Honda">Honda</option>
+          <option value="Other">Other / Parts only</option>
+        </select>
+      </div>
+      <div class="helper-field">
+        <label for="helper-use">Usage</label>
+        <select id="helper-use">
+          <option value="">Any</option>
+          <option value="street">Street</option>
+          <option value="track">Track</option>
+          <option value="show">Show / Display</option>
+        </select>
+      </div>
+      <div class="helper-field">
+        <label for="helper-budget">Budget</label>
+        <select id="helper-budget">
+          <option value="">Any</option>
+          <option value="low">Under $1,000</option>
+          <option value="mid">$1,000 – $3,000</option>
+          <option value="high">$3,000+</option>
+        </select>
+      </div>
+      <button id="helper-submit" class="helper-button">Show recommendations</button>
+    </div>
+
+    <div id="helper-results" class="product-grid helper-results"></div>
+  </section>
+
+  <!-- Filters -->
+  <section class="section filters-section">
+    <div class="filters-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="jdm">JDM</button>
+      <button class="filter-btn" data-filter="euro">Euro</button>
+      <button class="filter-btn" data-filter="parts">Parts</button>
+      <button class="filter-btn" data-filter="street">Street</button>
+      <button class="filter-btn" data-filter="track">Track</button>
+      <button class="filter-btn" data-filter="show">Show</button>
+      <button class="filter-btn" data-filter="budget-low">Under $1k</button>
+      <button class="filter-btn" data-filter="budget-mid">$1k–$3k</button>
+      <button class="filter-btn" data-filter="budget-high">$3k+</button>
+    </div>
+  </section>
+
+
   <!-- Search input – added so search function can attach properly -->
   <section class="section">
     <input type="text" id="searchInput" placeholder="Search products…" />
@@ -69,6 +129,7 @@
     &copy; 2025 RocketVibe Garage. All rights reserved.
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/products.js"></script>
 </body>
 </html>
