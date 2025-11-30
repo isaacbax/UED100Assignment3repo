@@ -1,6 +1,4 @@
-/***********************
- * PRODUCT DATA
- ***********************/
+/* PRODUCT DATA */
 const kits = [
   { name: "Widebody Kit BMW E31", price: "$4,999", img: "Euro/V1.0_8_SERIES_E31_PIMG_no_bg.jpg", brand: "BMW", category: "euro", use: "show" },
   { name: "Widebody Kit Mercedes W201", price: "$4,999", img: "Euro/V1.0_190E_W201_PIMG.webp", brand: "Mercedes", category: "euro", use: "street" },
@@ -36,9 +34,7 @@ function getAllProducts() {
   return [...kits, ...parts];
 }
 
-/***********************
- * RENDERING
- ***********************/
+/* RENDERING */
 function renderSection(products, target) {
   const grid = document.getElementById(target);
   if (!grid) return;
@@ -60,9 +56,7 @@ function renderSection(products, target) {
   });
 }
 
-/***********************
- * SEARCH BAR (existing behaviour)
- ***********************/
+/* SEARCH BAR (existing behaviour) */
 function initSearch() {
   const input = document.getElementById("searchInput");
   const results = document.getElementById("searchResults");
@@ -87,9 +81,7 @@ function initSearch() {
   });
 }
 
-/***********************
- * FILTER BAR
- ***********************/
+/* FILTER BAR */
 function applyFilter(filter) {
   let filteredKits = [...kits];
   let filteredParts = [...parts];
@@ -134,9 +126,7 @@ function initFilters() {
   });
 }
 
-/***********************
- * HELP ME CHOOSE WIZARD
- ***********************/
+/* HELP ME CHOOSE WIZARD */
 function initHelperWizard() {
   const chassisSelect = document.getElementById("helper-chassis");
   const useSelect = document.getElementById("helper-use");
@@ -180,9 +170,7 @@ function initHelperWizard() {
   });
 }
 
-/***********************
- * PAGE INIT
- ***********************/
+/* PAGE INIT */
 document.addEventListener("DOMContentLoaded", () => {
   // Default render
   renderSection(kits, "productGridKits");

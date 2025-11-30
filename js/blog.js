@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".news-item").forEach(item => {
     item.addEventListener("click", () => {

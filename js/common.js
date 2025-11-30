@@ -1,6 +1,4 @@
-/****************************
- * THEME TOGGLE (GLOBAL)
- ****************************/
+/* THEME TOGGLE (GLOBAL) */
 const body = document.body;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -26,17 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/****************************
- * UTILITY FUNCTIONS
- ****************************/
+/* UTILITY FUNCTIONS */
 function parsePrice(str) {
   return parseFloat(str.replace(/[^0-9.]/g, ""));
 }
 
 
-/****************************
- * CART SYSTEM (GLOBAL)
- ****************************/
+/* CART SYSTEM (GLOBAL) */
 const cart = [];
 
 function saveCartToStorage() {
@@ -114,9 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/****************************
- * TOAST + MINI CART
- ****************************/
+/* TOAST + MINI CART */
 let toastEl = null;
 let toastTimeout = null;
 let autoCartTimeout = null;
@@ -157,9 +149,7 @@ function openCartTemporarily() {
 }
 
 
-/****************************
- * PRODUCT POPUP (GLOBAL)
- ****************************/
+/* PRODUCT POPUP (GLOBAL) */
 function openProductPopup(product) {
   const popup = document.getElementById("productPopup");
   if (!popup) return;
@@ -266,9 +256,7 @@ function closeProductPopup() {
 }
 
 
-/****************************
- * GALLERY MODAL (GLOBAL)
- ****************************/
+/* GALLERY MODAL (GLOBAL) */
 function initGalleryModal() {
   const modal = document.getElementById("galleryModal");
   if (!modal) return;
