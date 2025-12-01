@@ -429,6 +429,7 @@ main.news-page h1 {
 .popup .close:hover {
   color: #ffc107;
 }
+
 /* Notify block inside product popup */
 .notify-block {
   margin-top: 1rem;
@@ -680,6 +681,7 @@ main.news-page h1 {
 .helper-results {
   margin-top: 2rem;
 }
+
 /* FEATURED BUILD */
 .section.featured-build {
   display: flex;
@@ -806,4 +808,48 @@ main.news-page h1 {
 /* MOTION TWEAKS */
 .rolling-gallery:hover {
   animation-play-state: paused;
+}
+
+/* WHO WE ARE – FULL WIDTH BAND ON BLOG */
+.who-we-are-section {
+  width: 100%;
+  padding: 3rem 1.5rem;
+  margin: 2rem 0 3rem;
+  cursor: pointer;
+  text-align: center;
+  background: linear-gradient(135deg, var(--card-bg), var(--header-bg));
+  border-top: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.who-we-are-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.who-we-are-section h2 {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.who-we-are-section p {
+  max-width: 720px;
+  margin: 0.5rem auto 1.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.who-we-are-cta {
+  display: inline-block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.8;
+}
+
+.who-we-are-section:hover .who-we-are-cta {
+  opacity: 1;
 }
